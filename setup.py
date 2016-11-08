@@ -7,7 +7,8 @@ setup(
     install_requires=[
         'requests',
         'requests-toolbelt',
-        'six'
+        'six',
+        'Enum'
     ],
     description="Python Wrapper for Facebook Messenger Platform",
     author='David Chua',

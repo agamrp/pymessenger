@@ -268,6 +268,9 @@ class Bot:
         """
         return self.send_attachment_url(recipient_id, "file", file_url, notification_type)
 
+    def print_hello(self):
+        print("HELLOOOOOOOOOOOO")
+
     def get_user_info(self, recipient_id, fields=None):
         """Getting information about the user
         https://developers.facebook.com/docs/messenger-platform/user-profile
