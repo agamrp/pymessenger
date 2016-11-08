@@ -172,7 +172,6 @@ class Bot:
                     "payment_method":payment_method,
                     "order_url":order_url,
                     "timestamp":timestamp,
-                    "text": text,
                     "elements": elements
                 }
             }
