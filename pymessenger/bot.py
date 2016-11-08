@@ -166,12 +166,12 @@ class Bot:
                 "type": "template",
                 "payload": {
                     "template_type": "receipt",
-                    "recipient_name":recipient_name,
-                    "order_number":order_number,
-                    "currency":currency,
-                    "payment_method":payment_method,
-                    "order_url":order_url,
-                    "timestamp":timestamp,
+                    "recipient_name": recipient_name,
+                    "order_number": order_number,
+                    "currency": currency,
+                    "payment_method": payment_method,
+                    "order_url": order_url,
+                    "timestamp": timestamp,
                     "elements": elements
                 }
             }
