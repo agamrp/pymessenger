@@ -160,6 +160,12 @@ class Bot:
             }
         }, NotificationType.regular)
 
+    def send_quick_reply(self, recipient_id, text, replies, notification_type=NotificationType.regular):
+        return self.send_message(recipient_id, {
+            "text": text,
+            "quick_replies": replies
+        }, notification_type)
+
     def send_receipt_message(self, recipient_id, recipient_name, order_number, currency, payment_method, summary, order_url=None, timestamp=None, elements=None, notification_type=NotificationType.regular):
         return self.send_message(recipient_id, {
             "attachment": {
