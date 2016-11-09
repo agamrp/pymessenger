@@ -8,7 +8,7 @@ setup(
         'requests',
         'requests-toolbelt',
         'six',
-        'Enum'
+        'enum'
     ],
     description="Python Wrapper for Facebook Messenger Platform",
     author='David Chua',
