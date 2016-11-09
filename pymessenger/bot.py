@@ -318,6 +318,8 @@ class Bot:
             json=payload
         )
         result = response.json()
+        print("SENDING JSON TO FACEBOOK")
+        print(result)
         return result
 
     def _send_payload(self, payload):
