@@ -317,6 +317,8 @@ class Bot:
         return None
 
     def send_raw(self, payload):
+        print("PAYLOAD TO FACEBOOK")
+        print(payload)
         request_endpoint = '{0}/me/messages'.format(self.graph_url)
         response = requests.post(
             request_endpoint,
