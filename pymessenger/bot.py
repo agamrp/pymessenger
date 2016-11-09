@@ -160,7 +160,7 @@ class Bot:
             }
         }, NotificationType.regular)
 
-    def send_receipt_message(self, recipient_id, recipient_name, order_number, currency, payment_method, order_url=None, timestamp=None, elements=None, notification_type=NotificationType.regular):
+    def send_receipt_message(self, recipient_id, recipient_name, order_number, currency, payment_method, summary, order_url=None, timestamp=None, elements=None, notification_type=NotificationType.regular):
         return self.send_message(recipient_id, {
             "attachment": {
                 "type": "template",
@@ -172,7 +172,8 @@ class Bot:
                     "payment_method": payment_method,
                     "order_url": order_url,
                     "timestamp": timestamp,
-                    "elements": elements
+                    "elements": elements,
+                    "summary": summary
                 }
             }
         }, notification_type)
