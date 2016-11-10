@@ -184,6 +184,25 @@ class Bot:
             }
         }, notification_type)
 
+    def send_list_message(self, recipient_id, top_element_style, elements=None, buttons=None, notification_type=NotificationType.regular):
+        return self.send_message(recipient_id, {
+            "attachment": {
+                "type": "template",
+                "payload": {
+                    "template_type": "list",
+                    "top_element_style": top_element_style
+                    "recipient_name": recipient_name,
+                    "order_number": order_number,
+                    "currency": currency,
+                    "payment_method": payment_method,
+                    "order_url": order_url,
+                    "timestamp": timestamp,
+                    "elements": elements,
+                    "summary": summary
+                }
+            }
+        }, notification_type)
+
     def send_action(self, recipient_id, action, notification_type=NotificationType.regular):
         """Send typing indicators or send read receipts to the specified recipient.
         https://developers.facebook.com/docs/messenger-platform/send-api-reference/sender-actions
