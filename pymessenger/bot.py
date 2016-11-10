@@ -190,7 +190,7 @@ class Bot:
                 "type": "template",
                 "payload": {
                     "template_type": "list",
-                    "top_element_style": top_element_style
+                    "top_element_style": top_element_style,
                     "elements": elements,
                     "buttons": buttons
                 }
