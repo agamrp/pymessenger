@@ -191,14 +191,8 @@ class Bot:
                 "payload": {
                     "template_type": "list",
                     "top_element_style": top_element_style
-                    "recipient_name": recipient_name,
-                    "order_number": order_number,
-                    "currency": currency,
-                    "payment_method": payment_method,
-                    "order_url": order_url,
-                    "timestamp": timestamp,
                     "elements": elements,
-                    "summary": summary
+                    "buttons": buttons
                 }
             }
         }, notification_type)
