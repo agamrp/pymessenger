@@ -27,8 +27,7 @@ class Bot:
 
         self.api_version = kwargs.get('api_version') or DEFAULT_API_VERSION
         self.app_secret = kwargs.get('app_secret')
-        # self.graph_url = 'https://graph.facebook.com/v{0}'.format(self.api_version)
-        self.graph_url = 'https://graph.facebook.com'
+        self.graph_url = 'https://graph.facebook.com/v{0}'.format(self.api_version)
         self.access_token = access_token
 
     @property
